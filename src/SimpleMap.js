@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import { isThisExpression } from '@babel/types';
+import SimplePlace from './SimplePlace'
  
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
  
@@ -10,7 +10,8 @@ class SimpleMap extends Component {
       lat: 60.1699,
       lng: 24.9384, 
     },
-    zoom: 11
+    zoom: 11,
+    greatPlaceCoords: {lat: 60.186854, lng: 24.951839}
   };
  
   render() {
@@ -22,6 +23,8 @@ class SimpleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
+          <SimplePlace {...this.props.greatPlaceCoords} text={'Roskapankki'} /* road circle */ />
+
           <AnyReactComponent
             lat={60.1699}
             lng={24.9384}
