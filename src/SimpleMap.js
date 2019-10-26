@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import SimplePlaceContainer from './SimplePlaceContainer'
+import shouldPureComponentUpdate from 'react-pure-render/function';
  
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -13,6 +14,8 @@ class SimpleMap extends Component {
     },
     zoom: 11,
   };
+
+  shouldComponentUpdate = shouldPureComponentUpdate;
 
   render() {
     return (
