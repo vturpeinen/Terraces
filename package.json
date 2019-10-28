@@ -6,6 +6,9 @@
     "google-map-react": "^1.1.5",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-google-maps": "^9.4.5",
+    "react-prop-types": "^0.4.0",
+    "react-proptypes": "^1.0.0",
     "react-pure-render": "^1.0.2",
     "react-scripts": "3.2.0"
   },
