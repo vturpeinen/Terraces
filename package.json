@@ -10,7 +10,7 @@
     "react-prop-types": "^0.4.0",
     "react-proptypes": "^1.0.0",
     "react-pure-render": "^1.0.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
